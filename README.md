@@ -3,5 +3,8 @@ Auto quest share addon for wow. When you pick up a quest it is automatically sha
 It's recommended that you use another addon to automatically accept the quests.
 
 
+
+
+## Other links
 * [Curse](https://mods.curse.com/addons/wow/autoshare)
 * [CurseForce](https://wow.curseforge.com/addons/autoshare)
