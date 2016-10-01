@@ -1,0 +1,7 @@
+## Interface: 70000
+## Title: |cff0000ffAuto Quest Sharing|r
+## Version: 1.0.0
+## Notes: Shares all quests with parties members.
+## Author: PsyKzz
+AutoShare.lua
+AutoShare.xml
