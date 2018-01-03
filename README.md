@@ -7,4 +7,4 @@ It's recommended that you use another addon to automatically accept the quests.
 
 ## Other links
 * [Curse](https://mods.curse.com/addons/wow/autoshare)
-* [CurseForce](https://wow.curseforge.com/addons/autoshare)
+* [CurseForge](https://wow.curseforge.com/addons/autoshare)
