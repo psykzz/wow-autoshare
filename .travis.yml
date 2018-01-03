@@ -11,9 +11,4 @@ branches:
   - /^\d+\.\d+(\.\d+)?(-\S*)?$/
 
 
-script: curl -s https://raw.githubusercontent.com/oUF-wow/packager/master/release.sh | bash
-
-notifications:
-  email:
-    on_success: always
-    on_failure: always
+script: curl -s https://raw.githubusercontent.com/BigWigsMods/packager/master/release.sh | bash -s -- -p 102603 
