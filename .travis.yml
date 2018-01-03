@@ -11,4 +11,4 @@ branches:
   - /^\d+\.\d+(\.\d+)?(-\S*)?$/
 
 
-script: curl -s https://raw.githubusercontent.com/BigWigsMods/packager/master/release.sh | bash -s -- -p 102603 
+script: curl -s https://raw.githubusercontent.com/psykzz/wow-addon-packager/master/release.sh | bash -s -- -p 102603 
