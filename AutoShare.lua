@@ -31,12 +31,12 @@ function AS_OnEvent(self, event, ...)
 end
 
 function AS_HandleQuestAccepted(questIndex)
-	if GetNumGroupMembers() >= 1 then
-		
-		SelectQuestLogEntry(questIndex);
+	if GetNumGroupMembers() < 1 then
+		return
+	end
+	SelectQuestLogEntry(questIndex);
 
-		if GetQuestLogPushable() then
-			QuestLogPushQuest();
-		end
+	if GetQuestLogPushable() then
+		QuestLogPushQuest();
 	end
 end
