@@ -4,7 +4,7 @@
 ## Notes: Shares all quests with parties members.
 ## Author: PsyKzz
 
-### X-Curse-Project-ID: 102603
+## X-Curse-Project-ID: 102603
 
 AutoShare.lua
 AutoShare.xml
