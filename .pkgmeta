@@ -1,0 +1,6 @@
+package-as: AutoShare
+
+enable-nolib-creation: no
+
+ignore:
+  - README.md
