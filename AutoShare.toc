@@ -1,10 +1,8 @@
-## Interface: 80100
+## Interface: 80300
 ## Title: |cff0000ffAuto Quest Sharing|r
 ## Version: @project-version@
 ## Notes: Shares all quests with parties members.
 ## Author: PsyKzz
-
-## X-Curse-Project-ID: 102603
 
 AutoShare.lua
 AutoShare.xml
