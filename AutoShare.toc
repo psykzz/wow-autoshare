@@ -1,4 +1,4 @@
-## Interface: 80300
+## Interface: 90002
 ## Title: |cff0000ffAuto Quest Sharing|r
 ## Version: @project-version@
 ## Notes: Shares all quests with parties members.
