@@ -79,9 +79,11 @@ read_globals = {
     "hooksecurefunc",
     "min",
     "tinsert",
+    "QuestLogPushQuest",
+    "GetQuestLogPushable",
+    "SelectQuestLogEntry",
+    "DEFAULT_CHAT_FRAME",
+    "strupper",
 }
 globals = {
-    "SlashCmdList",
-    "DEFAULT_CHAT_FRAME",
-    "strupper"
 }

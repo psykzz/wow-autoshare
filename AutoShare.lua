@@ -7,7 +7,6 @@ local EVENTS = {};
 -- Event ADDON_LOADED
 EVENTS.ADDON_LOADED = "ADDON_LOADED";
 EVENTS.QUEST_ACCEPTED = "QUEST_ACCEPTED";
-EVENTS.QUEST_DETAIL = "QUEST_DETAIL";
 
 local function AS_SendMessage(message)
 	DEFAULT_CHAT_FRAME:AddMessage(tostring(message));
@@ -21,15 +20,6 @@ local function AS_OnLoad(self)
 	AS_SendMessage(AS_BLUE .. AS_Name .. " by PsyKzz." .. AS_END_COLOR);
 end
 
-local function AS_OnEvent(self, event, ...)
-	if event == EVENTS.ADDON_LOADED and ... == "AutoShare" then
-		AS_SendMessage(AS_BLUE .. AS_Name .. " loaded." .. AS_END_COLOR);
-	elseif event == EVENTS.QUEST_ACCEPTED then
-		AS_HandleQuestAccepted(...);
-	elseif event == EVENTS.QUEST_DETAIL then
-		AS_HandleQuestDetail(...);
-	end
-end
 
 local function AS_HandleQuestAccepted(questIndex)
 	if GetNumGroupMembers() < 1 then
@@ -42,6 +32,10 @@ local function AS_HandleQuestAccepted(questIndex)
 	end
 end
 
-local function AS_HandleQuestDetail()
-	AS_SendMessage(AS_BLUE .. AS_Name .. ": Debug :: QuestDetail" .. AS_END_COLOR)
+local function AS_OnEvent(self, event, ...)
+	if event == EVENTS.ADDON_LOADED and ... == "AutoShare" then
+		AS_SendMessage(AS_BLUE .. AS_Name .. " loaded." .. AS_END_COLOR);
+	elseif event == EVENTS.QUEST_ACCEPTED then
+		AS_HandleQuestAccepted(...);
+	end
 end
