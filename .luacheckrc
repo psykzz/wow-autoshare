@@ -82,4 +82,6 @@ read_globals = {
 }
 globals = {
     "SlashCmdList",
+    "DEFAULT_CHAT_FRAME",
+    "strupper"
 }
