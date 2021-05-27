@@ -3,6 +3,7 @@
 ## Version: @project-version@
 ## Notes: Shares all quests with parties members.
 ## Author: PsyKzz
+## X-Wago-ID: Mj6jB46R
 
 AutoShare.lua
 AutoShare.xml
