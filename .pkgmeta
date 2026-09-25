@@ -7,5 +7,6 @@ ignore:
   - .github
   - .gitignore
   - .luacheckrc
+  - logo.png
 
 license-output: LICENSE.txt
