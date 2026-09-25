@@ -10,15 +10,6 @@ and Retail (`90002`, `120100`, `120105`). The addon selects the
 quest-sharing API available on the running client rather than assuming
 every branch uses the same quest event payload.
 
-To check the available APIs in-game after `/reload`, run:
-
-```text
-/script print("AutoShare:", AS_Frame and AS_Frame:IsEventRegistered("QUEST_ACCEPTED"), "modern:", C_QuestLog and C_QuestLog.IsPushableQuest ~= nil, "legacy:", GetQuestLogPushable ~= nil, "push:", QuestLogPushQuest ~= nil)
-```
-
-Then accept a shareable quest while grouped to check that the share prompt
-reaches another player; API presence alone does not confirm a successful share.
-
 ## Installation
 
 Install from [Wago](https://addons.wago.io/addons/wow-autoshare) or
