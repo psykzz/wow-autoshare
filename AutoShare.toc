@@ -1,9 +1,9 @@
-## Interface: 90002
+## Interface: 90002,16001
 ## Title: |cff0000ffAuto Quest Sharing|r
 ## Version: @project-version@
 ## Notes: Shares all quests with parties members.
 ## Author: PsyKzz
+## X-Curse-Project-ID: 102603
 ## X-Wago-ID: Mj6jB46R
 
 AutoShare.lua
-AutoShare.xml

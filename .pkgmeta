@@ -4,5 +4,8 @@ enable-nolib-creation: no
 
 ignore:
   - README.md
+  - .github
+  - .gitignore
+  - .luacheckrc
 
 license-output: LICENSE.txt

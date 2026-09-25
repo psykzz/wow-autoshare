@@ -12,15 +12,6 @@ local function AS_SendMessage(message)
 	DEFAULT_CHAT_FRAME:AddMessage(tostring(message));
 end
 
-local function AS_OnLoad(self)
-	for _,v in pairs(EVENTS) do
-		self:RegisterEvent(strupper(v));
-	end
-
-	AS_SendMessage(AS_BLUE .. AS_Name .. " by PsyKzz." .. AS_END_COLOR);
-end
-
-
 local function AS_HandleQuestAccepted(questIndex)
 	if GetNumGroupMembers() < 1 then
 		return
@@ -39,3 +30,11 @@ local function AS_OnEvent(self, event, ...)
 		AS_HandleQuestAccepted(...);
 	end
 end
+
+local frame = CreateFrame("Frame", "AS_Frame")
+for _, event in pairs(EVENTS) do
+	frame:RegisterEvent(event)
+end
+frame:SetScript("OnEvent", AS_OnEvent)
+
+AS_SendMessage(AS_BLUE .. AS_Name .. " by PsyKzz." .. AS_END_COLOR)
