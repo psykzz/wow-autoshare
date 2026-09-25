@@ -3,12 +3,8 @@
 Automatically shares newly accepted quests with party members when a quest
 can be shared. Use another addon if you also want to auto-accept shared quests.
 
-Targets Classic Era (`11508`, `11509`), Burning Crusade Classic (`20505`,
-`20506`), Wrath Classic (`30405`, `38002`), Cataclysm Classic (`40402`),
-Mists Classic (`50503`, `50504`), the Classic beta/Forever client (`16001`),
-and Retail (`90002`, `120100`, `120105`). The addon selects the
-quest-sharing API available on the running client rather than assuming
-every branch uses the same quest event payload.
+Supports Classic Era, Burning Crusade Classic, Wrath Classic, Cataclysm
+Classic, Mists Classic, the Classic beta/Forever client, and Retail.
 
 ## Installation
 
