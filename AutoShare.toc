@@ -1,4 +1,4 @@
-## Interface: 11508,11509,20505,20506,30405,38002,40402,50503,50504,16001,90002,120100,120105
+## Interface: 90002,16001,120105
 ## Title: |cff0000ffAuto Quest Sharing|r
 ## Version: @project-version@
 ## Notes: Shares all quests with parties members.
