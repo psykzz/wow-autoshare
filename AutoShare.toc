@@ -3,6 +3,8 @@
 ## Version: @project-version@
 ## Notes: Shares all quests with parties members.
 ## Author: PsyKzz
+## Category: Quests
+## IconTexture: Interface\Icons\INV_Misc_Note_01
 ## X-Curse-Project-ID: 102603
 ## X-Wago-ID: Mj6jB46R
 

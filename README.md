@@ -6,6 +6,8 @@ can be shared. Use another addon if you also want to auto-accept shared quests.
 Supports Classic Era, Burning Crusade Classic, Wrath Classic, Cataclysm
 Classic, Mists Classic, the Classic beta/Forever client, and Retail.
 
+Listed under **Quests** in the AddOns list with a note icon.
+
 ## Installation
 
 Install from [Wago](https://addons.wago.io/addons/wow-autoshare) or
