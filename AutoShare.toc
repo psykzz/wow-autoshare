@@ -1,12 +1,13 @@
 ## Interface: 11508,20505,50503,120001,16001
 ## Title: Auto Quest Sharing
-## Version: @project-version@
 ## Notes: Shares all quests with party members.
 ## Author: PsyKzz
+## Version: @project-version@
+## X-Curse-Project-ID: 102603
+
+## X-Category: Quests
 ## Category: Quests
 ## Category-enUS: Quests
-## X-Category: Quests
 ## IconTexture: Interface\Icons\INV_Misc_Note_01
-## X-Curse-Project-ID: 102603
 
 AutoShare.lua
