@@ -1,4 +1,4 @@
-## Interface: 90002,16001,120105
+## Interface: 16001
 ## Title: Auto Quest Sharing
 ## Version: @project-version@
 ## Notes: Shares all quests with parties members.
