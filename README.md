@@ -31,4 +31,4 @@ CurseForge upload also requires `X-Curse-Project-ID` in `AutoShare.toc`.
 
 ## License
 
-See [License.txt](License.txt).
+See [LICENSE](LICENSE).
