@@ -9,5 +9,3 @@ ignore:
   - .luacheckrc
   - .pkgmeta
   - logo.png
-
-license-output: LICENSE.txt
