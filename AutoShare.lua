@@ -14,8 +14,7 @@ end
 
 local ShareQuest
 if C_QuestLog and C_QuestLog.IsPushableQuest and C_QuestLog.SetSelectedQuest and QuestLogPushQuest then
-	ShareQuest = function(questIndexOrID, questID)
-		questID = questID or questIndexOrID
+	ShareQuest = function(questID)
 		if not C_QuestLog.IsPushableQuest(questID) then
 			return
 		end
@@ -29,8 +28,11 @@ if C_QuestLog and C_QuestLog.IsPushableQuest and C_QuestLog.SetSelectedQuest and
 	end
 elseif SelectQuestLogEntry and GetQuestLogPushable and QuestLogPushQuest then
 	ShareQuest = function(questIndex, questID)
-		if not questID then
-			questIndex = GetQuestLogIndexByID and GetQuestLogIndexByID(questIndex)
+		if questID then
+			if not GetQuestLogIndexByID then
+				return
+			end
+			questIndex = GetQuestLogIndexByID(questID)
 		end
 		if not questIndex or questIndex == 0 then
 			return
@@ -49,8 +51,18 @@ else
 	AS_SendMessage(AS_BLUE .. AS_Name .. ": quest sharing APIs are unavailable on this client." .. AS_END_COLOR)
 end
 
+local function AS_IsInGroup()
+	if GetNumGroupMembers then
+		return GetNumGroupMembers() > 0
+	end
+
+	local partyMembers = GetNumPartyMembers and GetNumPartyMembers() or 0
+	local raidMembers = GetNumRaidMembers and GetNumRaidMembers() or 0
+	return partyMembers > 0 or raidMembers > 0
+end
+
 local function AS_HandleQuestAccepted(questIndexOrID, questID)
-	if GetNumGroupMembers() > 0 and ShareQuest then
+	if AS_IsInGroup() and ShareQuest then
 		ShareQuest(questIndexOrID, questID)
 	end
 end

@@ -1,5 +1,5 @@
 ## Interface: 90002,16001,120105
-## Title: |cff0000ffAuto Quest Sharing|r
+## Title: Auto Quest Sharing
 ## Version: @project-version@
 ## Notes: Shares all quests with parties members.
 ## Author: PsyKzz

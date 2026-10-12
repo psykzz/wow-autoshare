@@ -40,6 +40,8 @@ read_globals = {
     "ElvUI",
     "GetAddOnMetadata",
     "GetNumGroupMembers",
+    "GetNumPartyMembers",
+    "GetNumRaidMembers",
     "GetQuestLogIndexByID",
     "GetQuestLogSelection",
     "GetSpecialization",
