@@ -3,7 +3,7 @@ local AS_BLUE = "|c000099ff";
 local AS_END_COLOR = "|r";
 
 local EVENTS = {
-	ADDON_LOADED = "ADDON_LOADED",
+	PLAYER_ENTERING_WORLD = "PLAYER_ENTERING_WORLD",
 	QUEST_ACCEPTED = "QUEST_ACCEPTED",
 };
 
@@ -131,8 +131,13 @@ local function AS_HandleQuestAccepted(arg1, arg2)
 end
 
 local function AS_OnEvent(self, event, ...)
-	if event == EVENTS.ADDON_LOADED and ... == "AutoShare" then
-		AS_SendMessage(AS_BLUE .. AS_Name .. " loaded." .. AS_END_COLOR);
+	if event == EVENTS.PLAYER_ENTERING_WORLD then
+		local isInitialLogin = ...;
+		if isInitialLogin then
+			AS_SendMessage(AS_BLUE .. AS_Name .. " by PsyKzz." .. AS_END_COLOR);
+			AS_SendMessage(AS_BLUE .. AS_Name .. " loaded." .. AS_END_COLOR);
+		end
+		self:UnregisterEvent(event);
 	elseif event == EVENTS.QUEST_ACCEPTED then
 		AS_HandleQuestAccepted(...);
 	end
@@ -143,5 +148,3 @@ for _, event in pairs(EVENTS) do
 	frame:RegisterEvent(event);
 end
 frame:SetScript("OnEvent", AS_OnEvent);
-
-AS_SendMessage(AS_BLUE .. AS_Name .. " by PsyKzz." .. AS_END_COLOR);
